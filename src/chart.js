@@ -1,8 +1,15 @@
-import React, { PureComponent } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import React from 'react';
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+} from 'recharts';
 
 export default (props) => {
-
   return (
     <LineChart
       width={500}
@@ -15,13 +22,18 @@ export default (props) => {
         bottom: 5,
       }}
     >
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" />
+      <CartesianGrid strokeDasharray='3 3' />
+      <XAxis dataKey='name' />
       <YAxis />
       <Tooltip />
       <Legend />
-      <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+      <Line
+        type='monotone'
+        dataKey='pv'
+        stroke='#8884d8'
+        activeDot={{ r: 8 }}
+      />
+      <Line type='monotone' dataKey='uv' stroke='#82ca9d' />
     </LineChart>
   );
-}
+};
