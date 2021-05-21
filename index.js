@@ -21,7 +21,6 @@ const data = [
     uv: 2000,
     pv: 9800,
     amt: 2290,
-    test: 'abc',
   },
   {
     name: 'Page D',
@@ -56,7 +55,6 @@ const appProps = {
 const App = () => {
   return (
     <div>
-      hi
       <Chart {...appProps} />
       <Table {...appProps} />
     </div>
